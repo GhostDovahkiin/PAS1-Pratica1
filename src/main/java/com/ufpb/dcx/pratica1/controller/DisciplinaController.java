@@ -1,5 +1,6 @@
 package com.ufpb.dcx.pratica1.controller;
 
+import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
 
 import com.ufpb.dcx.pratica1.Disciplina;
@@ -19,8 +20,8 @@ public class DisciplinaController {
 
 
   @RequestMapping(method = RequestMethod.GET, value = "v1/api/disciplinas")
-  public Disciplina getDisciplinas(){
-    return new Disciplina(counter.incrementAndGet(), disciplina, counter.incrementAndGet());
+  public List<Disciplina> getDisciplinas(){
+    return List<Disciplina>(counter.incrementAndGet());
   }
   
 

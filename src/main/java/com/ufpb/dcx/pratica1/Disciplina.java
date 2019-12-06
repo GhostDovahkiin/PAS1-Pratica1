@@ -8,10 +8,10 @@ public class Disciplina {
   String nome;
   double nota;
 
-  public Disciplina(long id, String nome, double nota){
+  public Disciplina(long id){
     this.id = id;
-    this.nome = nome;
-    this.nota = nota;
+    nome = "PAS1";
+    nota = 10;
   }
 
   public long getId() {

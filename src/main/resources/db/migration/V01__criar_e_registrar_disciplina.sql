@@ -1,7 +1,7 @@
 CREATE TABLE disciplinas (
   id_Disciplina SERIAL PRIMARY KEY,
-  nome_Disciplina VARCHAR(50) NOT NULL,
-  nota_Disciplina FLOAT NOT NULL
+  nome_disciplina VARCHAR(50),
+  nota_disciplina FLOAT NOT NULL
 );
 
 INSERT INTO disciplinas (nome_disciplina,nota_disciplina) VALUES ('FILOSOFIA',3.08),('GESTAO PROJETOS',0.65),('BD2',2.13),('MAT. ELEMENTAR',3.97),('LP',2.40),('CALC. DIF. INTEGRAL',8.95),('LOGICA',2.02),('ADM1',6.09),('ENG. SOFTWARE',6.92),('IHC',4.47);

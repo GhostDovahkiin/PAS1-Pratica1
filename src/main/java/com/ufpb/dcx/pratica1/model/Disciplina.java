@@ -1,5 +1,6 @@
 package com.ufpb.dcx.pratica1.model;
 
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -17,8 +18,18 @@ public class Disciplina {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long idDisciplina;
-  private String nomeDisciplina;
-  private float notaDisciplina;
+
+  String nomeDisciplina;
+  float notaDisciplina;
+
+  public Disciplina(){
+    super();
+  }
+
+  public Disciplina(String nomeDisciplina, float notaDisciplina){
+    this.nomeDisciplina = nomeDisciplina;
+    this.notaDisciplina = notaDisciplina;
+  }
 
   public long getId() {
     return idDisciplina;

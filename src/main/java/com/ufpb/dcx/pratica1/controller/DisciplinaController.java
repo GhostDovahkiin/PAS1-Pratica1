@@ -15,14 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DisciplinaController {
 
-  private final AtomicLong counter = new AtomicLong();
-  private final String disciplina = "PAS1";
-
-
-  @RequestMapping(method = RequestMethod.GET, value = "v1/api/disciplinas")
-  public List<Disciplina> getDisciplinas(){
-    return List<Disciplina>(counter.incrementAndGet());
-  }
+  
   
 
 }

@@ -64,5 +64,13 @@ public class Disciplina {
       return false;
     return true;
   }
+
+  public void setNomeDisciplina(String nomeDisciplina) {
+    this.nomeDisciplina = nomeDisciplina;
+  }
+
+  public void setNotaDisciplina(float notaDisciplina) {
+    this.notaDisciplina = notaDisciplina;
+  }
   
 }
